@@ -5,10 +5,13 @@ def valida_email(email):
 #def valida_email(email):
     #if email[-8:] == "puc.com":
         #return True
-    #else
+    #else:
         #return False 
-    
+
+print("\nTestando a 'valida_email':")
 print(valida_email("guilhermelevy159@puc.com"))
+print(valida_email("guilhermelevy159@gmail.com"))
+print(valida_email("20140156@csa.net.br"))
 
 def possuiMaiuscula(palavra):
     for letra in palavra:
@@ -16,7 +19,7 @@ def possuiMaiuscula(palavra):
               return True
     return False 
 
-print(possuiMaiuscula("Abc@1234")) 
+#print(possuiMaiuscula("Abc@1234")) 
 
 def possuiMinuscula(palavra):
     for letra in palavra:
@@ -24,13 +27,15 @@ def possuiMinuscula(palavra):
               return True
     return False 
 
-print(possuiMinuscula("Abc@1234"))
+#print(possuiMinuscula("Abc@1234"))
 
 def possuiNumero(palavra):
     for caracter in palavra:
         if "0" <= caracter <= "9":     
               return True
     return False 
+
+#print(possuiNumero("Abc@1234"))
 
 def valida_senha(senha):
     check_tamanho = len(senha) >= 8
@@ -77,4 +82,7 @@ def criptografa_senha(senha):
             senha_cripto += char 
     return senha_cripto 
 
+print("\nTestando a 'criptografa_senha':")
 print(criptografa_senha("ZARALHAR@"))
+print(criptografa_senha("gui$2007"))
+print(criptografa_senha("Levy1509"))
